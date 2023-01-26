@@ -31,3 +31,6 @@ body{
     width:100%;
 }
 
+.right-column{
+    display:flex;
+}
