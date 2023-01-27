@@ -19,9 +19,37 @@
         </div>
         <div class="right-column">
             <div class="right-header">
-                <h2>If you or someone you know is interested in purchasing a home or need photography done for home or
-                    land, sign up today to receive updates!</h2>
+                <p>If you or someone you know is interested in purchasing a home or need photography done for home or
+                    land, sign up today to receive updates!</p>
             </div>
+            <form action="index.html" method="post">
+                <ul>
+                    <li>
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="users-first-name" id="first-name" required />
+                    </li>
+                    <li>
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="users-last-name" id="last-name" required />
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="text" name="users-email" id="email" required />
+                    </li>
+                    <li>
+                        <label for="password">Password</label>
+                        <input type="text" name="users-password" id="password" required />
+                    </li>
+                    <li>
+                        <label for="phone-number">Phone Number</label>
+                        <input type="number" name="users-number" id="phone-number" />
+                    </li>
+                    <li>
+                        <label for="confirm">Confirm Password</label>
+                        <input type="text" name="confirm-password" id="confirm" required />
+                    </li>
+                </ul>
+            </form>
         </div>
     </div>
 </body>
