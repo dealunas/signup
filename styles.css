@@ -27,31 +27,10 @@ body {
 .right-column {
     display: flex;
     flex-direction: column;
-    padding: 0 100px 0 100px;
+    padding: 0 50px;
     height: 100vh;
     width: max(45%, 400px);
     background-color: white;
-}
-
-@media screen and (max-width: 1250px) {
-
-    .sign-up {
-        flex-direction: column;
-    }
-
-    .left-column {
-        background-image: url(./media-house.jpg);
-        background-position: center;
-        height: 25vh;
-        width: 80vw;
-    }
-
-    .right-column {
-        width: 80vw;
-        margin: 0 100px 0 100px;
-        padding: 0 !important;
-    }
-
 }
 
 .left-header {
@@ -63,18 +42,18 @@ body {
     width: 100%;
 }
 
-
-
 .right-header {
     line-height: 50px;
-    font-size: 2.5vw;
+    font-size: 2vw;
+    padding: 75px 0;
 }
 
 form ul {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 25px;
+    padding-left: 0;
 }
 
 form li {
@@ -82,4 +61,52 @@ form li {
     flex-direction: column;
     list-style: none;
     margin-right: 50px;
+}
+
+label {
+    font-size: 3vh;
+    width: 15vw;
+}
+
+input {
+    height: 3vh;
+}
+
+@media screen and (max-width: 1250px) {
+
+    .sign-up {
+        flex-direction: column;
+
+    }
+
+    .left-column {
+        background-image: url(./media-house.jpg);
+        background-position: center;
+        height: 25vh;
+        width: 80vw;
+    }
+
+    .right-column {
+        width: 80vw;
+        height: 75vh;
+        margin: 0 100px;
+        padding: 0 !important;
+    }
+
+    .right-header {
+        font-size: 2vh;
+        padding: 0 !important;
+        line-height: 1.5;
+        margin: 0 3vw;
+    }
+
+    form {
+        margin: 0 3vw;
+    }
+
+    label {
+        width: auto;
+        font-size: 2vh;
+    }
+
 }
