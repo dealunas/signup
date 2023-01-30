@@ -77,6 +77,8 @@ label {
 
 input {
     height: 3vh;
+    border: 1px solid #915a2299;
+    border-radius: .2em;
 }
 
 @media screen and (max-width: 1250px) {
