@@ -28,7 +28,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 0 50px;
-    height: 100vh;
+    min-height: 100vh;
     width: max(35%, 400px);
     background-color: white;
 }
@@ -84,7 +84,19 @@ input {
     border-radius: .2em;
 }
 
-@media screen and (max-width: 1250px) {
+button {
+    margin-top: 3rem;
+    padding: 0.5rem 2.5rem;
+    font-size: 1.5em;
+    border: 1px solid #915a22ba;
+    border-radius: 0.3em;
+    background-color: rgb(102 74 25 / 75%);
+    color: white;
+    letter-spacing: .1rem;
+    box-shadow: 6px 5px 7px #5a2f0452;
+}
+
+@media screen and (max-width: 1200px) {
 
     .sign-up {
         flex-direction: column;
@@ -123,6 +135,13 @@ input {
     label {
         width: auto;
         font-size: 2vh;
+    }
+
+    button {
+        margin-top: 1.5rem;
+        padding: 0.2rem 1.5rem;
+        font-size: 1.4em;
+        letter-spacing: normal;
     }
 
 }
