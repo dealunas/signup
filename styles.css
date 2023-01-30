@@ -97,13 +97,13 @@ input {
 
     .right-column {
         width: 80vw;
-        height: 75vh;
+        height: 100vh;
         margin: 0 100px;
         padding: 0 !important;
     }
 
     .right-header {
-        font-size: 2vh;
+        font-size: 2.5vh;
         padding: 0 !important;
         line-height: 1.5;
         margin: 0 3vw;
@@ -111,6 +111,7 @@ input {
 
     form {
         margin: 0 3vw;
+        box-shadow: 0px 0px 9px 7px #915a2247;
     }
 
     label {
