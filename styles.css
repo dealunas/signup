@@ -90,6 +90,14 @@ input {
     background-color: #603e0024;
 }
 
+input:focus-visible {
+    height: 2.5em;
+    width: 15em;
+    border-radius: .2em;
+    background-color: white;
+    border: 1px solid #915a2299;
+}
+
 button {
     margin-top: 3rem;
     padding: 0.5rem 2.5rem;
