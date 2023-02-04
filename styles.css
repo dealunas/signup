@@ -71,33 +71,49 @@ form {
     position: relative;
     flex-direction: column;
     list-style: none;
+    justify-content: center;
 }
+
 
 label {
-    font-size: 1.1em;
+    display: none;
+    position: absolute;
+    font-size: .9em;
     width: 11vw;
     font-variant: all-small-caps;
+    top: 1px;
+    left: 10px;
 }
 
-
 input {
-    height: 2.2em;
-    width: 13em;
-    border: 1px solid #915a2299;
-    border-radius: .2em;
     background-color: #603e0024;
-    font-size: 15px;
+}
+
+input,
+input:focus {
+    height: 2rem;
+    width: 13rem;
+    border: 1px solid #915a2299;
+    border-radius: 0.2em;
+    font-size: 1rem;
+    padding: 15px 0 0 10px;
 }
 
 input:focus {
-    height: 2.2em;
-    width: 13em;
-    border-radius: .2em;
     outline: 0px;
     background-color: white;
-    border: 1px solid #915a2299;
-    font-size: 15px;
 }
+
+
+input:focus+label {
+    display: flex;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+
 
 button {
     margin-top: 3rem;
