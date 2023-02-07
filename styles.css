@@ -105,12 +105,18 @@ input:focus {
 }
 
 
+
 input:focus+label {
     display: flex;
 }
 
 input:invalid {
     border-color: red;
+}
+
+input:valid {
+    background-color: rgba(100, 218, 100, 0.397);
+    border-color: green;
 }
 
 input:focus::placeholder {
