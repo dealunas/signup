@@ -75,11 +75,14 @@ form {
 }
 
 label {
+    color: transparent;
     position: absolute;
-    font-size: 1em;
+    font-size: .9em;
     width: 11vw;
     font-variant: all-small-caps;
-    left: 10px;
+    left: 11px;
+    top: 1px;
+    transform: translateY(-5px);
 }
 
 input {
@@ -102,10 +105,10 @@ input:focus {
 }
 
 input:focus+label {
-    font-size: .9em;
-    left: 10px;
-    transition: transform .3s ease-out;
-    transform: translateY(-15px);
+    display: block;
+    color: black;
+    transform: translateY(0px);
+    transition: transform .2s ease-out;
 }
 
 input:invalid {
@@ -115,6 +118,11 @@ input:invalid {
 input:valid {
     background-color: rgba(100, 218, 100, 0.397);
     border-color: green;
+}
+
+input:focus::placeholder {
+    transition: .3s ease-out;
+    color: transparent;
 }
 
 button {
