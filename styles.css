@@ -113,7 +113,9 @@ input:invalid {
     border-color: red;
 }
 
-
+input:focus::placeholder {
+    color: transparent;
+}
 
 button {
     margin-top: 3rem;
