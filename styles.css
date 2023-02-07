@@ -74,7 +74,6 @@ form {
     justify-content: center;
 }
 
-
 label {
     position: absolute;
     font-size: 1em;
@@ -116,10 +115,6 @@ input:invalid {
 input:valid {
     background-color: rgba(100, 218, 100, 0.397);
     border-color: green;
-}
-
-input:focus::placeholder {
-    color: transparent;
 }
 
 button {
