@@ -132,9 +132,17 @@ input:not(:focus):not(:placeholder-shown):valid {
     border-color: green;
 }
 
+input:not(:focus):not(:placeholder-shown)+label {
+    display: block;
+}
+
 input:focus::placeholder {
     transition: .3s ease-out;
     color: transparent;
+}
+
+label span {
+    color: red;
 }
 
 button {
