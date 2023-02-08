@@ -122,12 +122,13 @@ input:focus {
     background-color: white;
 }
 
-input:invalid {
+input:not(:focus):not(:placeholder-shown):invalid {
+    background-color: rgb(255 171 171 / 36%);
     border-color: red;
 }
 
-input:valid {
-    background-color: rgba(100, 218, 100, 0.397);
+input:not(:focus):not(:placeholder-shown):valid {
+    background-color: rgba(187, 250, 187, 0.397);
     border-color: green;
 }
 
