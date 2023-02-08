@@ -28,29 +28,30 @@
             <form action="index.html" method="post">
                 <div class="field">
                     <div class="field-input">
-                        <input type="text" name="users-first-name" id="first-name" placeholder="First name" required />
-                        <label for="first-name">First Name</label>
+                        <input type="text" name="users-first-name" id="first-name" placeholder="First name *"
+                            required />
+                        <label for="first-name">First Name <span>*</span></label>
                     </div>
                     <div class="field-input">
-                        <input type="text" name="users-last-name" id="last-name" placeholder="Last name" required />
-                        <label for="last-name">Last Name</label>
-                    </div>
-                    <div class="field-input">
-                        <input type="email" name="users-email" id="email" placeholder="E-mail" required />
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="field-input">
-                        <input type="text" name="users-password" id="password" placeholder="Password" required />
-                        <label for="password">Password</label>
+                        <input type="text" name="users-last-name" id="last-name" placeholder="Last name *" required />
+                        <label for="last-name">Last Name <span>*</span></label>
                     </div>
                     <div class="field-input">
                         <input type="number" name="users-number" id="phone-number" placeholder="Phone number" />
                         <label for="phone-number">Phone Number</label>
                     </div>
                     <div class="field-input">
-                        <input type="text" name="confirm-password" id="confirm" placeholder="Confirm password"
+                        <input type="email" name="users-email" id="email" placeholder="E-mail *" required />
+                        <label for="email">Email <span>*</span></label>
+                    </div>
+                    <div class="field-input">
+                        <input type="text" name="users-password" id="password" placeholder="Password *" required />
+                        <label for="password">Password <span>*</span></label>
+                    </div>
+                    <div class="field-input">
+                        <input type="text" name="confirm-password" id="confirm" placeholder="Confirm password *"
                             required />
-                        <label for="confirm">Confirm Password</label>
+                        <label for="confirm">Confirm Password <span>*</span></label>
                     </div>
                 </div>
                 <button type="submit">Sign up</button>
