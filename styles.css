@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: rgb(102 74 25 / 75%);
+    background-color: rgb(66 44 4 / 85%);
     font-family: 'Barlow', sans-serif;
 }
 
@@ -16,20 +16,19 @@ body {
 .right-column {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .left-column {
     background-image: url(./house.jpg);
     background-size: cover;
-    justify-content: center;
     position: relative;
     background-repeat: no-repeat;
     height: 100vh;
-    width: max(30%, 400px);
+    width: max(33%, 450px);
 }
 
 .right-column {
-    padding: 0 1em;
     width: max(45%, 400px);
     background-color: white;
     min-height: 100vh;
@@ -52,6 +51,8 @@ h1 {
     line-height: 40px;
     font-size: 1.5em;
     padding: 1.5rem;
+    font-weight: 800;
+    color: #4e2400bd;
 }
 
 form {
@@ -146,7 +147,7 @@ label span {
 }
 
 button {
-    margin-top: 3rem;
+    margin-top: 3vh;
     padding: 0.5rem 2.5rem;
     font-size: 1.5em;
     border: 1px solid #915a22ba;
@@ -164,6 +165,7 @@ button {
 @media screen and (max-width: 1200px) {
 
     .sign-up {
+        display: flex;
         flex-direction: column;
     }
 
@@ -175,6 +177,7 @@ button {
     }
 
     .right-column {
+        justify-content: flex-start;
         min-height: 75vh;
         width: 80vw;
         margin: 0 100px;
@@ -183,9 +186,14 @@ button {
 
     .right-header {
         font-size: 2.5vh;
-        padding: 0 !important;
         line-height: 1.5;
-        margin: 0 3vw;
+    }
+
+    form,
+    .right-header,
+    .login {
+        padding: 1rem 1.5rem;
+        margin: 0;
     }
 
     .field {
