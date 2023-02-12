@@ -20,7 +20,7 @@ body {
 }
 
 .left-column {
-    background-image: url(./house.jpg);
+    background-image: url(house.jpg);
     background-size: cover;
     position: relative;
     background-repeat: no-repeat;
@@ -144,6 +144,45 @@ input:focus::placeholder {
 
 label span {
     color: red;
+}
+
+.placeholder {
+    position: absolute;
+    height: 3vh;
+    font-size: 1.2rem;
+    padding: 15px 0 0 10px;
+}
+
+.requirement {
+    position: absolute;
+    top: 3rem;
+    background: #ffe8d7;
+    border: 1px solid #915a2299;
+    border-radius: 2px;
+    padding-right: 0.3em;
+}
+
+.require {
+    display: flex;
+    padding-left: 1.5em;
+    height: 1.4em;
+    font-size: 1.1em;
+}
+
+.require:before {
+    width: 1.5em;
+    height: 1.5em;
+    display: block;
+    position: absolute;
+    left: 0;
+    content: ' ';
+    background-image: url(./invalid.png);
+    background-repeat: no-repeat;
+    margin-left: .1em;
+}
+
+.check {
+    color: green;
 }
 
 button {
