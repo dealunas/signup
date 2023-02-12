@@ -46,11 +46,17 @@
                         <label for="email">Email <span>*</span></label>
                     </div>
                     <div class="field-input">
-                        <input type="text" name="users-password" id="password" placeholder="Password *" required />
-                        <label for="password">Password <span>*</span></label>
+                        <input type="password" name="users-password" id="password" placeholder="Password *"
+                            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required />
+                        <label for=" password">Password <span>*</span></label>
+                        <div class="requirement">
+                            <span class="require">Must have upper case</span>
+                            <span class="require">Must have lower case</span>
+                            <span class="require">Must have number</span>
+                        </div>
                     </div>
                     <div class="field-input">
-                        <input type="text" name="confirm-password" id="confirm" placeholder="Confirm password *"
+                        <input type="password" name="confirm-password" id="confirm" placeholder="Confirm password *"
                             required />
                         <label for="confirm">Confirm Password <span>*</span></label>
                     </div>
