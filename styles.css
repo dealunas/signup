@@ -154,17 +154,26 @@ label span {
 }
 
 .requirement {
+    display: none;
     position: absolute;
     top: 3rem;
-    background: #ffe8d7;
-    border: 1px solid #915a2299;
+    background: rgb(177 154 113);
     border-radius: 2px;
-    padding-right: 0.3em;
+    z-index: 1;
+    width: 13em;
+    padding-left: .7em;
+    border: 1px solid #4e3c0694;
+}
+
+#upper,
+#lower,
+#num {
+    display: none;
 }
 
 .require {
     display: flex;
-    padding-left: 1.5em;
+    padding-left: 1.2em;
     height: 1.4em;
     font-size: 1.1em;
 }
@@ -176,8 +185,9 @@ label span {
     position: absolute;
     left: 0;
     content: ' ';
-    background-image: url(./invalid.png);
+    background-image: url(./invalid2.png);
     background-repeat: no-repeat;
+    background-size: 22px;
     margin-left: .1em;
 }
 
@@ -255,6 +265,11 @@ button {
         padding: 0.2rem 1.5rem;
         font-size: 1.4em;
         letter-spacing: normal;
+    }
+
+    .requirement {
+        width: 13.7em;
+        padding-left: .4em;
     }
 
 }
